@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan - AI & Robotics Specialist</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563EB',
+                        secondary: '#1E293B',
+                        accent: '#64748B',
+                        light: '#F8FAFC',
+                        soft: '#E2E8F0'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light text-secondary font-sans">
+    
+    <!-- Header / Navigation -->
+    <header id="header" class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo/Name -->
+                <div class="text-2xl font-bold text-primary">
+                    <a href="#home" class="hover:text-blue-600 transition-colors duration-300">Rohan</a>
+                </div>
+                
+                <!-- Navigation Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-secondary hover:text-primary transition-colors duration-300">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="mobile-nav-link">Home</a>
+                    <a href="#about" class="mobile-nav-link">About</a>
+                    <a href="#skills" class="mobile-nav-link">Skills</a>
+                    <a href="#projects" class="mobile-nav-link">Projects</a>
+                    <a href="#contact" class="mobile-nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="container mx-auto px-6 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left">
+                    <h1 class="text-5xl lg:text-6xl font-bold text-secondary mb-6 leading-tight">
+                        Hi, I'm <span class="text-primary">Rohan</span>
+                    </h1>
+                    <h2 class="text-2xl lg:text-3xl font-semibold text-accent mb-6">
+                        A Computer Science Graduate specializing in AI & Robotics
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Passionate about leveraging artificial intelligence and robotics to solve real-world problems. 
+                        I combine technical expertise with creative problem-solving to create innovative solutions.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#projects" class="btn-primary">
+                            <i class="fas fa-rocket mr-2"></i>
+                            View My Work
+                        </a>
+                        <a href="assets/documents/Rohan Kailash B_Resume.pdf" class="btn-secondary" target="_blank">
+                            <i class="fas fa-download mr-2"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Profile Image Placeholder -->
+                <div class="flex justify-center lg:justify-end">
+                    <div class="relative">
+                        <div class="w-80 h-80 bg-gradient-to-br from-primary to-blue-600 rounded-full flex items-center justify-center shadow-2xl">
+                            <i class="fas fa-user text-white text-8xl"></i>
+                        </div>
+                        <!-- Decorative elements -->
+                        <div class="absolute -top-4 -right-4 w-20 h-20 bg-yellow-400 rounded-full opacity-80 animate-bounce"></div>
+                        <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-green-400 rounded-full opacity-80 animate-pulse"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-secondary mb-4">About Me</h2>
+                <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- About Content -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-primary mb-4">My Journey</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        I'm a Computer Science graduate with a deep passion for artificial intelligence, robotics, and strategic thinking. 
+                        My academic journey has equipped me with strong foundations in machine learning, computer vision, and software development.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Beyond academics, I'm an active member of the robotics club where I've contributed to various automation projects. 
+                        My love for chess has taught me strategic planning and problem-solving skills that I apply to my technical work.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        I recently completed an AI internship where I worked on cutting-edge machine learning applications, 
+                        gaining hands-on experience with real-world AI implementations.
+                    </p>
+                    
+                    <!-- Quick Facts -->
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="text-center p-4 bg-soft rounded-lg">
+                            <i class="fas fa-graduation-cap text-3xl text-primary mb-2"></i>
+                            <h4 class="font-semibold">Computer Science</h4>
+                            <p class="text-sm text-gray-600">Graduate</p>
+                        </div>
+                        <div class="text-center p-4 bg-soft rounded-lg">
+                            <i class="fas fa-robot text-3xl text-primary mb-2"></i>
+                            <h4 class="font-semibold">AI & Robotics</h4>
+                            <p class="text-sm text-gray-600">Specialization</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- About Image -->
+                <div class="flex justify-center lg:justify-end">
+                    <div class="relative">
+                        <div class="w-96 h-96 bg-gradient-to-br from-blue-100 to-indigo-200 rounded-2xl shadow-xl flex items-center justify-center">
+                            <i class="fas fa-laptop-code text-8xl text-primary"></i>
+                        </div>
+                        <!-- Floating elements -->
+                        <div class="absolute -top-6 -left-6 w-12 h-12 bg-yellow-300 rounded-full opacity-70"></div>
+                        <div class="absolute -bottom-6 -right-6 w-16 h-16 bg-blue-300 rounded-full opacity-70"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-light">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-secondary mb-4">Skills & Expertise</h2>
+                <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+                <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+                    A comprehensive toolkit of technologies and frameworks I use to bring ideas to life
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+                        <i class="fas fa-code mr-3"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI & ML -->
+                <div class="skill-category">
+                    <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+                        <i class="fas fa-brain mr-3"></i>
+                        AI & Machine Learning
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="skill-item">
+                            <span class="skill-name">Machine Learning</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Computer Vision</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NumPy & Pandas</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Technologies -->
+                <div class="skill-category">
+                    <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+                        <i class="fas fa-tools mr-3"></i>
+                        Tools & Technologies
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="skill-item">
+                            <span class="skill-name">OpenCV</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Linux</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Networking</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-secondary mb-4">Featured Projects</h2>
+                <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+                <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Here are some of the projects I've worked on that showcase my skills and passion
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: Alzheimer's Disease Diagnosis -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-indigo-200 rounded-t-xl flex items-center justify-center">
+                            <i class="fas fa-brain text-6xl text-primary"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/rohankailash/alzheimers-diagnosis" target="_blank" class="btn-primary">
+                                <i class="fab fa-github mr-2"></i>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="text-xl font-semibold text-secondary mb-2">Alzheimer's Disease Diagnosis</h3>
+                        <p class="text-gray-600 mb-4">
+                            Machine learning system using MRI biomarkers for early detection and diagnosis of Alzheimer's disease.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: Stress Detection -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <div class="w-full h-48 bg-gradient-to-br from-green-100 to-emerald-200 rounded-t-xl flex items-center justify-center">
+                            <i class="fas fa-bed text-6xl text-green-600"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/rohankailash/stress-detection" target="_blank" class="btn-primary">
+                                <i class="fab fa-github mr-2"></i>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="text-xl font-semibold text-secondary mb-2">Stress Detection System</h3>
+                        <p class="text-gray-600 mb-4">
+                            Computer vision application using OpenCV and MediaPipe to detect stress levels through sleep position analysis.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">MediaPipe</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: Question Retrieval System -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <div class="w-full h-48 bg-gradient-to-br from-purple-100 to-pink-200 rounded-t-xl flex items-center justify-center">
+                            <i class="fas fa-search text-6xl text-purple-600"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/rohankailash/question-retrieval" target="_blank" class="btn-primary">
+                                <i class="fab fa-github mr-2"></i>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="text-xl font-semibold text-secondary mb-2">Question Retrieval System</h3>
+                        <p class="text-gray-600 mb-4">
+                            Intelligent question-answering system using natural language processing and information retrieval techniques.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Information Retrieval</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-secondary mb-4">Achievements & Experience</h2>
+                <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy text-4xl text-yellow-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-secondary mb-2">AI Internship</h3>
+                    <p class="text-gray-600 text-center">Completed intensive AI internship with hands-on machine learning experience</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-robot text-4xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-secondary mb-2">Robotics Club</h3>
+                    <p class="text-gray-600 text-center">Active member contributing to automation and robotics projects</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-chess text-4xl text-green-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-secondary mb-2">Chess Achievements</h3>
+                    <p class="text-gray-600 text-center">Strategic thinking and problem-solving through competitive chess</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-certificate text-4xl text-purple-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-secondary mb-2">Certifications</h3>
+                    <p class="text-gray-600 text-center">Various technical certifications in AI, ML, and programming</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-secondary mb-4">Get In Touch</h2>
+                <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+                <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+                    I'm always open to discussing new opportunities, interesting projects, or just having a chat about AI and robotics!
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 class="text-2xl font-semibold text-primary mb-6">Send me a message</h3>
+                    <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" required 
+                                      class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary w-full">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3 class="text-2xl font-semibold text-primary mb-6">Let's connect</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope text-xl text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Email</h4>
+                                <p class="text-gray-600">rohankailashb@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin text-xl text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-secondary">LinkedIn</h4>
+                                <p class="text-gray-600">linkedin.com/in/rohankailash</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="contact-icon">
+                                <i class="fab fa-github text-xl text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-secondary">GitHub</h4>
+                                <p class="text-gray-600">github.com/rohankailash</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-secondary mb-4">Follow me</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://linkedin.com/in/rohankailash" target="_blank" class="social-link" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/rohankailash" target="_blank" class="social-link" aria-label="GitHub Profile">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:rohankailashb@gmail.com" class="social-link" aria-label="Send Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg mb-2">© 2024 Rohan. All rights reserved.</p>
+            <p class="text-gray-300">Designed by Rohan with ❤️</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html> 

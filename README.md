@@ -217,4 +217,5 @@ If you need help customizing this portfolio or have questions about the implemen
 
 **Built with ❤️ by Rohan**
 
-*Last updated: December 2024* 
+
+*Last updated: September 2025* 
